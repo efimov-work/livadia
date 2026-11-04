@@ -52,7 +52,7 @@ export const viewport: Viewport = { width: 'device-width', initialScale: 1, them
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
-        <html lang="ru" className={`${manrope.variable} ${prata.variable}`}>
+        <html lang="ru" className={`${manrope.variable} ${prata.variable}`} suppressHydrationWarning>
             <body>
                 <script dangerouslySetInnerHTML={{ __html: "document.documentElement.classList.add('js')" }} />
                 {children}
