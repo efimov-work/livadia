@@ -1,0 +1,43 @@
+1:"$Sreact.fragment"
+2:I[8176,[],""]
+3:I[7654,[],""]
+b:I[5693,[],"OutletBoundary"]
+c:"$Sreact.suspense"
+f:"ViewportBoundary"
+10:I[5693,[],"$f"]
+11:"MetadataBoundary"
+12:I[5693,[],"$11"]
+:HL["/livadia/_next/static/css/4aca77d6ab7d54d0.css","style"]
+4:T876,{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://efimov-work.github.io/livadia/#website","url":"https://efimov-work.github.io/livadia/","name":"Новая Ливадия","inLanguage":"ru-RU"},{"@type":"WebPage","@id":"https://efimov-work.github.io/livadia/#webpage","url":"https://efimov-work.github.io/livadia/","name":"Новая Ливадия: сити-курорт в Ялте с видами на море и горы","description":"Премиальный сити-курорт Новая Ливадия в Ялте. Квартиры с видами на море и горы, ландшафтный парк, собственные пляжи, спа и курортный сервис.","inLanguage":"ru-RU","isPartOf":{"@id":"https://efimov-work.github.io/livadia/#website"},"about":{"@id":"https://efimov-work.github.io/livadia/#complex"},"primaryImageOfPage":{"@type":"ImageObject","url":"https://efimov-work.github.io/livadia/assets/images/hero.webp"}},{"@type":"ApartmentComplex","@id":"https://efimov-work.github.io/livadia/#complex","name":"Новая Ливадия","description":"Премиальный сити-курорт Новая Ливадия в Ялте. Квартиры с видами на море и горы, ландшафтный парк, собственные пляжи, спа и курортный сервис.","url":"https://efimov-work.github.io/livadia/","telephone":"+7 800 533-87-52","email":"info@newlivadia.ru","address":{"@type":"PostalAddress","addressCountry":"RU","addressRegion":"Республика Крым","addressLocality":"Ялта, пгт. Виноградное","streetAddress":"ул. Объездная дорога, 6"},"image":["https://efimov-work.github.io/livadia/assets/images/hero.webp","https://efimov-work.github.io/livadia/assets/images/complex-day.webp","https://efimov-work.github.io/livadia/assets/images/park.webp","https://efimov-work.github.io/livadia/assets/images/pool.webp"]},{"@type":"Organization","@id":"https://efimov-work.github.io/livadia/#developer","name":"ГК Таврида Девелопмент","url":"https://tavrida-development.ru/"}]}6:X
+9:X
+9:C
+a:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$1","c",{"children":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],null,["$","$Lb",null,{"children":["$","$c",null,{"name":"Next.MetadataOutlet","children":"$@d"}]}]]}],"p":"$@e","v":null,"s":"$6"}}]]
+7:[["children",{"s":"_not-found","h":96,"d":{"r":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]]}],"p":"$@8","v":"$9","s":"$6"},"c":"$Qa"}]]
+0:{"t":{"t":{"s":"","h":80,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/livadia/_next/static/css/4aca77d6ab7d54d0.css","precedence":"next"}]],["$","html",null,{"lang":"ru","className":"__variable_fde237","suppressHydrationWarning":true,"children":["$","body",null,{"children":[["$","script",null,{"dangerouslySetInnerHTML":{"__html":"document.documentElement.classList.add('js')"}}],["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$4"}}]]}]}]]}],"p":"$@5","v":null,"s":"$6"},"c":"$Q7"},"h":{"r":["$","$1","h",{"children":[["$","meta",null,{"name":"robots","content":"noindex"}],["$","$L10",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","2",{"name":"theme-color","content":"#283049"}]]}],["$","$L12",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$c",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Новая Ливадия: сити-курорт в Ялте с видами на море и горы"}],["$","meta","1",{"name":"description","content":"Премиальный сити-курорт Новая Ливадия в Ялте. Квартиры с видами на море и горы, ландшафтный парк, собственные пляжи, спа и курортный сервис."}],["$","meta","2",{"name":"application-name","content":"Новая Ливадия"}],["$","link","3",{"rel":"manifest","href":"/livadia/manifest.webmanifest"}],["$","meta","4",{"name":"keywords","content":"Новая Ливадия,жилой комплекс Ялта,квартиры в Ялте,недвижимость у моря в Крыму,сити-курорт Новая Ливадия,Таврида Девелопмент"}],["$","meta","5",{"name":"robots","content":"index, follow"}],["$","meta","6",{"name":"googlebot","content":"index, follow, max-image-preview:large, max-snippet:-1"}],["$","meta","7",{"name":"category","content":"real estate"}],["$","link","8",{"rel":"canonical","href":"https://efimov-work.github.io/livadia/"}],["$","meta","9",{"name":"format-detection","content":"telephone=no, address=no, email=no"}],"$L13","$L14","$L15","$L16","$L17","$L18","$L19","$L1a","$L1b","$L1c","$L1d","$L1e","$L1f","$L20","$L21","$L22"]}]}],null]}],"$L23"]}],"p":"$@24","v":null,"s":"$6"}},"a":"$@25","u":"$@26","b":"bIwDvSaQKJa1PvYEONZ4q"}
+27:I[6632,[],"IconMark"]
+d:null
+13:["$","meta","10",{"property":"og:title","content":"Новая Ливадия: сити-курорт в Ялте с видами на море и горы"}]
+14:["$","meta","11",{"property":"og:description","content":"Премиальный сити-курорт Новая Ливадия в Ялте. Квартиры с видами на море и горы, ландшафтный парк, собственные пляжи, спа и курортный сервис."}]
+15:["$","meta","12",{"property":"og:url","content":"https://efimov-work.github.io/livadia/"}]
+16:["$","meta","13",{"property":"og:site_name","content":"Новая Ливадия"}]
+17:["$","meta","14",{"property":"og:locale","content":"ru_RU"}]
+18:["$","meta","15",{"property":"og:image","content":"https://efimov-work.github.io/livadia/assets/images/hero.webp"}]
+19:["$","meta","16",{"property":"og:image:width","content":"1923"}]
+1a:["$","meta","17",{"property":"og:image:height","content":"1083"}]
+1b:["$","meta","18",{"property":"og:image:alt","content":"Новая Ливадия у моря на закате"}]
+1c:["$","meta","19",{"property":"og:type","content":"website"}]
+1d:["$","meta","20",{"name":"twitter:card","content":"summary_large_image"}]
+1e:["$","meta","21",{"name":"twitter:title","content":"Новая Ливадия: сити-курорт в Ялте с видами на море и горы"}]
+1f:["$","meta","22",{"name":"twitter:description","content":"Премиальный сити-курорт Новая Ливадия в Ялте. Квартиры с видами на море и горы, ландшафтный парк, собственные пляжи, спа и курортный сервис."}]
+20:["$","meta","23",{"name":"twitter:image","content":"https://efimov-work.github.io/livadia/assets/images/hero.webp"}]
+21:["$","link","24",{"rel":"icon","href":"/livadia/icon.svg?490a018b38b219b1","type":"image/svg+xml","sizes":"any"}]
+22:["$","$L27","25",{}]
+23:["$","meta",null,{"name":"next-size-adjust","content":""}]
+6:300
+26:true
+6:C
+25:0
+8:"$undefined"
+5:"$undefined"
+24:"$undefined"
+e:"$undefined"

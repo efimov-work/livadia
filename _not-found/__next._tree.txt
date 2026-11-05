@@ -1,0 +1,7 @@
+:HL["/livadia/_next/static/media/1fc5a77b95105241-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/livadia/_next/static/media/318024bc5a3ebb05-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/livadia/_next/static/media/e4e47b4f5d3dfe7e-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/livadia/_next/static/css/4aca77d6ab7d54d0.css","style"]
+2:[["children",{"s":"__PAGE__","h":160}]]
+1:[["children",{"s":"_not-found","h":96,"c":"$Q2"}]]
+0:{"b":"bIwDvSaQKJa1PvYEONZ4q","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
