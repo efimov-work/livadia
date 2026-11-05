@@ -67,6 +67,7 @@ export const APARTMENTS = [
         size: '24,79 до 25,06 м²',
         text: 'Открытая планировка для отпуска, поездок в Ялту или аренды.',
         image: '/assets/images/studio.webp',
+        plan: '/assets/images/plan-studio.webp',
         alt: 'Светлая студия с панорамным окном'
     },
     {
@@ -74,6 +75,7 @@ export const APARTMENTS = [
         size: '31,47 до 31,91 м²',
         text: 'Отдельная спальня и кухня-гостиная для жизни у моря.',
         image: '/assets/images/one-bedroom.webp',
+        plan: '/assets/images/plan-one-bedroom.webp',
         alt: 'Интерьер однокомнатной квартиры в светлых тонах'
     },
     {
@@ -81,6 +83,7 @@ export const APARTMENTS = [
         size: '46,3 до 51,7 м²',
         text: 'Функциональное пространство для семьи и работы из дома.',
         image: '/assets/images/two-bedroom.webp',
+        plan: '/assets/images/plan-two-bedroom.webp',
         alt: 'Гостиная двухкомнатной квартиры с панорамными окнами'
     },
     {
@@ -88,6 +91,7 @@ export const APARTMENTS = [
         size: '90,29 до 147,29 м²',
         text: 'Просторные резиденции с террасами и личной зоной отдыха.',
         image: '/assets/images/three-bedroom.webp',
+        plan: '/assets/images/plan-three-bedroom.webp',
         alt: 'Просторная гостиная трёхкомнатной квартиры'
     }
 ];

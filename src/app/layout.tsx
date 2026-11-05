@@ -16,8 +16,15 @@ import {
 import './globals.css';
 import './responsive.css';
 
-const manrope = localFont({ src: '../fonts/manrope-variable.ttf', variable: '--font-manrope', weight: '400 800', display: 'swap' });
-const prata = localFont({ src: '../fonts/prata.ttf', variable: '--font-prata', weight: '400', display: 'swap' });
+const circe = localFont({
+    src: [
+        { path: '../fonts/circe_light.woff2', weight: '300', style: 'normal' },
+        { path: '../fonts/circe.woff2', weight: '400', style: 'normal' },
+        { path: '../fonts/circe_bold.woff2', weight: '700', style: 'normal' }
+    ],
+    variable: '--font-circe',
+    display: 'swap'
+});
 
 export const metadata: Metadata = {
     metadataBase: new URL(siteOrigin()),
@@ -48,11 +55,11 @@ export const metadata: Metadata = {
     verification: { google: GOOGLE_VERIFICATION, yandex: YANDEX_VERIFICATION }
 };
 
-export const viewport: Viewport = { width: 'device-width', initialScale: 1, themeColor: '#203a33' };
+export const viewport: Viewport = { width: 'device-width', initialScale: 1, themeColor: '#283049' };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
-        <html lang="ru" className={`${manrope.variable} ${prata.variable}`} suppressHydrationWarning>
+        <html lang="ru" className={circe.variable} suppressHydrationWarning>
             <body>
                 <script dangerouslySetInnerHTML={{ __html: "document.documentElement.classList.add('js')" }} />
                 {children}

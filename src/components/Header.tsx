@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import { asset } from '@/lib/asset';
 import { CONTACTS, NAV } from '@/lib/content';
 
 export default function Header() {
@@ -15,7 +16,7 @@ export default function Header() {
     }, [open]);
 
     useEffect(() => {
-        const media = matchMedia('(min-width: 1001px)');
+        const media = matchMedia('(min-width: 1101px)');
         const close = () => media.matches && setOpen(false);
         media.addEventListener('change', close);
         return () => media.removeEventListener('change', close);
@@ -32,17 +33,13 @@ export default function Header() {
         <div className="header-shell" onKeyDown={onKeyDown}>
             <header className="header" id="header">
                 <a className="brand" href="#top" aria-label="Новая Ливадия, на главную">
-                    <svg viewBox="0 0 36 36" aria-hidden="true">
-                        <path d="M5 29V7h4l18 15V7h4v22h-3L9 14v15z" />
-                    </svg>
-                    <span>Новая Ливадия</span>
+                    <img src={asset('/assets/brand/livadia-logo.svg')} alt="" width="356" height="65" />
                 </a>
                 <nav className="desktop-nav" aria-label="Основная навигация">
-                    {NAV.map((item) => (
-                        <a key={item.href} href={item.href}>{item.label}</a>
-                    ))}
+                    {NAV.map((item) => <a key={item.href} href={item.href}>{item.label}</a>)}
                 </nav>
                 <a className="header-phone" href={CONTACTS.phoneHref}>{CONTACTS.phone}</a>
+                <button className="header-cta" data-request="Подбор квартиры">Подобрать квартиру</button>
                 <button
                     ref={toggle}
                     className="menu-toggle"
@@ -51,8 +48,7 @@ export default function Header() {
                     aria-controls="mobile-menu"
                     onClick={() => setOpen(!open)}
                 >
-                    <span />
-                    <span />
+                    <span /><span />
                 </button>
             </header>
             <div className="scroll-line" aria-hidden="true" />
@@ -66,7 +62,7 @@ export default function Header() {
                 </nav>
                 <div className="mobile-menu-bottom">
                     <a href={CONTACTS.phoneHref}>{CONTACTS.phone}</a>
-                    <button data-request="Запись на просмотр">Записаться на просмотр</button>
+                    <button className="button button-olive" data-request="Запись на просмотр">Записаться на просмотр</button>
                 </div>
             </div>
         </div>

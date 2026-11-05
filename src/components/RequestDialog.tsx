@@ -85,7 +85,7 @@ export default function RequestDialog() {
                     <input type="checkbox" required />
                     <span>Согласен с <a href={CONTACTS.policy} target="_blank" rel="noreferrer">политикой конфиденциальности</a></span>
                 </label>
-                <button className="button button-green" type="submit">Перейти к отправке <span>↗</span></button>
+                <button className="button button-blue" type="submit">Перейти к отправке <span>↗</span></button>
                 <p className="form-note">Письмо откроется в вашем почтовом приложении. Данные не сохраняются на сайте.</p>
                 <p className="form-status" role="status" aria-live="polite">{note}</p>
             </form>

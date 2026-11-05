@@ -10,7 +10,7 @@ const html = existsSync(htmlPath) ? readFileSync(htmlPath, 'utf8') : '';
 
 test('static export contains the complete page and SEO', () => {
     assert.ok(html.length > 10000, 'Run npm run export before tests');
-    assert.match(html, /<h1[^>]*>Новая/);
+    assert.match(html, /<h1[^>]*>[\s\S]*Новая Ливадия[\s\S]*<\/h1>/);
     assert.match(html, /id="architecture"/);
     assert.match(html, /id="infrastructure"/);
     assert.match(html, /id="apartments"/);
