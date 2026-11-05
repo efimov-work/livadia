@@ -25,7 +25,7 @@ img { display: block; max-width: 100%; }
 figure, p, h1, h2, h3 { margin: 0; }
 ul { margin: 0; padding: 0; list-style: none; }
 address { font-style: normal; }
-section { scroll-margin-top: 76px; }
+section { scroll-margin-top: 0; }
 ::selection { background: var(--olive); color: var(--blue); }
 :focus-visible { outline: 2px solid var(--olive); outline-offset: 5px; }
 .container { width: min(100%, var(--container)); margin: 0 auto; padding-inline: var(--pad); }
