@@ -1,6 +1,8 @@
 'use client';
 
 import { useEffect } from 'react';
+import { asset } from '@/lib/asset';
+import { APARTMENTS, INFRASTRUCTURE } from '@/lib/content';
 
 export default function Motion() {
     useEffect(() => {
@@ -12,7 +14,7 @@ export default function Motion() {
                     revealObserver.unobserve(entry.target);
                 }
             }),
-            { rootMargin: '0px 0px -8% 0px', threshold: 0.06 }
+            { rootMargin: '0px 0px 18% 0px', threshold: 0.01 }
         );
         document.querySelectorAll<HTMLElement>('[data-reveal]').forEach((element) => {
             if (reduced.matches || element.getBoundingClientRect().top < innerHeight * 0.95) element.classList.add('is-visible');
@@ -75,12 +77,40 @@ export default function Motion() {
         addEventListener('scroll', update, { passive: true });
         addEventListener('resize', update, { passive: true });
         update();
+
+        const sources = [
+            ...INFRASTRUCTURE.map((item) => item.image),
+            ...APARTMENTS.flatMap((item) => [item.image, item.plan])
+        ];
+        const preloaded = new Set<string>();
+        const preloadImages = () => {
+            sources.forEach((source) => {
+                const url = asset(source);
+                if (preloaded.has(url)) return;
+                preloaded.add(url);
+                const image = new Image();
+                image.decoding = 'async';
+                image.src = url;
+            });
+        };
+        let idleCallback: number | undefined;
+        let fallbackTimer: ReturnType<typeof setTimeout> | undefined;
+        const schedulePreload = () => {
+            if ('requestIdleCallback' in window) idleCallback = window.requestIdleCallback(preloadImages, { timeout: 2000 });
+            else fallbackTimer = setTimeout(preloadImages, 1200);
+        };
+        if (document.readyState === 'complete') schedulePreload();
+        else addEventListener('load', schedulePreload, { once: true });
+
         return () => {
             revealObserver.disconnect();
             counterObserver.disconnect();
             navigationObserver.disconnect();
             removeEventListener('scroll', update);
             removeEventListener('resize', update);
+            removeEventListener('load', schedulePreload);
+            if (idleCallback !== undefined) window.cancelIdleCallback(idleCallback);
+            if (fallbackTimer !== undefined) clearTimeout(fallbackTimer);
         };
     }, []);
     return null;

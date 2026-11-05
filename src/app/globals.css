@@ -270,9 +270,9 @@ h2 { font-size: clamp(52px, 6vw, 94px); }
 .js [data-reveal="mask"] { transform: translateY(22px); clip-path: none; }
 .apartment-tabs button .apartment-tab-label { font-size: 14px; color: inherit; }
 .apartment-tab-label small { display: block; margin-top: 3px; color: var(--muted); font-size: 10px; font-weight: 400; }
-.js [data-reveal="image"] { transform: scale(.985); clip-path: none; }
+.js [data-reveal="image"] { opacity: 1; transform: scale(.985); clip-path: none; }
 .js [data-reveal="slide"] { transform: translateX(-50px); }
-.js [data-reveal].is-visible { opacity: 1; transform: none; clip-path: inset(0 0 0 0); transition: opacity .9s cubic-bezier(.22, 1, .36, 1), transform .9s cubic-bezier(.22, 1, .36, 1), clip-path 1.15s cubic-bezier(.22, 1, .36, 1); }
+.js [data-reveal].is-visible { opacity: 1; transform: none; clip-path: inset(0 0 0 0); transition: opacity .6s cubic-bezier(.22, 1, .36, 1), transform .6s cubic-bezier(.22, 1, .36, 1), clip-path .75s cubic-bezier(.22, 1, .36, 1); }
 .stats-grid > div:nth-child(2), .story-features > div:nth-child(2), .distance-grid > div:nth-child(2) { transition-delay: .08s; }
 .stats-grid > div:nth-child(3), .story-features > div:nth-child(3), .distance-grid > div:nth-child(3) { transition-delay: .16s; }
 .stats-grid > div:nth-child(4), .distance-grid > div:nth-child(4) { transition-delay: .24s; }

@@ -66,7 +66,7 @@ export default function ApartmentShowcase() {
                     </div>
                 </div>
                 <div className="apartment-interior">
-                    <img src={asset(item.image)} alt={item.alt} loading="lazy" />
+                    <img src={asset(item.image)} alt={item.alt} loading="eager" decoding="async" />
                     <span>Визуализация интерьера</span>
                 </div>
             </div>

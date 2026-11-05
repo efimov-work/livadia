@@ -54,7 +54,7 @@ export default function Page() {
 
                 <section className="about photo-spread" id="about" aria-labelledby="about-title">
                     <div className="spread-media">
-                        <img src={asset('/assets/images/terrace.webp')} alt="Панорамная терраса Новой Ливадии с видом на море и горы" loading="lazy" data-parallax="0.06" />
+                        <img src={asset('/assets/images/terrace.webp')} alt="Панорамная терраса Новой Ливадии с видом на море и горы" loading="lazy" decoding="async" data-parallax="0.06" />
                     </div>
                     <div className="spread-shade" />
                     <div className="container spread-inner">
@@ -99,13 +99,13 @@ export default function Page() {
                         </ul>
                     </div>
                     <div className="beach-media" data-reveal="image">
-                        <img src={asset('/assets/images/beach.webp')} alt="Благоустроенный пляж с шезлонгами и зонтами у моря" loading="lazy" data-parallax="0.05" />
+                        <img src={asset('/assets/images/beach.webp')} alt="Благоустроенный пляж с шезлонгами и зонтами у моря" loading="lazy" decoding="async" data-parallax="0.05" />
                     </div>
                 </section>
 
                 <section className="architecture photo-spread" id="architecture" aria-labelledby="architecture-title">
                     <div className="spread-media">
-                        <img src={asset('/assets/images/hero.webp')} alt="Панорамное остекление и пластика фасадов Новой Ливадии" loading="lazy" data-parallax="0.07" />
+                        <img src={asset('/assets/images/hero.webp')} alt="Панорамное остекление и пластика фасадов Новой Ливадии" loading="lazy" decoding="async" data-parallax="0.07" />
                     </div>
                     <div className="architecture-shade" />
                     <div className="container spread-inner">
@@ -140,7 +140,7 @@ export default function Page() {
                     </div>
                     <div className="map-scroll" data-reveal="image">
                         <a className="location-map" href={CONTACTS.mapHref} target="_blank" rel="noreferrer" aria-label="Открыть расположение на Яндекс Картах">
-                            <img src={asset('/assets/images/presentation-map.webp')} alt="Карта окружения Новой Ливадии с дворцом, парком, набережной и инфраструктурой Ялты" loading="lazy" />
+                            <img src={asset('/assets/images/presentation-map.webp')} alt="Карта окружения Новой Ливадии с дворцом, парком, набережной и инфраструктурой Ялты" loading="lazy" decoding="async" />
                         </a>
                     </div>
                     <div className="container location-bottom">
@@ -173,7 +173,7 @@ export default function Page() {
 
                 <section className="contact" id="contact" aria-labelledby="contact-title">
                     <div className="contact-media" data-reveal="image">
-                        <img src={asset('/assets/images/sales-office.webp')} alt="Офис продаж Новой Ливадии с панорамным видом на горы" loading="lazy" />
+                        <img src={asset('/assets/images/sales-office.webp')} alt="Офис продаж Новой Ливадии с панорамным видом на горы" loading="lazy" decoding="async" />
                     </div>
                     <div className="contact-panel">
                         <div data-reveal>

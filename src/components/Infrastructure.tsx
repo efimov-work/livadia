@@ -31,7 +31,7 @@ export default function Infrastructure() {
                 <p data-reveal>Инфраструктура для восстановления, семейных дней и встреч с друзьями. Не покидая территорию.</p>
             </div>
             <div className="infra-panel" id="infra-panel" role="tabpanel" aria-labelledby={`infra-tab-${active}`} key={active}>
-                <img src={asset(item.image)} alt={item.alt} loading="lazy" />
+                <img src={asset(item.image)} alt={item.alt} loading="eager" decoding="async" />
                 <div className="infra-shade" />
                 <div className="container infra-inner">
                     <div className="infra-copy">
