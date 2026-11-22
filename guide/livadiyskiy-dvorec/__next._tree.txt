@@ -1,0 +1,9 @@
+:HL["/livadia/_next/static/media/1fc5a77b95105241-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/livadia/_next/static/media/318024bc5a3ebb05-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/livadia/_next/static/media/e4e47b4f5d3dfe7e-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/livadia/_next/static/css/4aca77d6ab7d54d0.css","style"]
+:HL["/livadia/_next/static/css/9022e954a315e89d.css","style"]
+3:[["children",{"s":"__PAGE__","h":160}]]
+2:[["children",{"s":{"n":"slug","t":"d","k":"livadiyskiy-dvorec","s":[]},"h":65632,"c":"$Q3"}]]
+1:[["children",{"s":"guide","h":131168,"c":"$Q2"}]]
+0:{"b":"VUWUvi9EkS-CY1DJC6iwL","t":{"t":{"s":"","h":131152,"c":"$Q1"}}}
