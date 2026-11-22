@@ -1,10 +1,11 @@
 'use client';
 
+import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
 import { asset } from '@/lib/asset';
 import { CONTACTS, NAV } from '@/lib/content';
 
-export default function Header() {
+export default function Header({ guide = false }: { guide?: boolean }) {
     const [open, setOpen] = useState(false);
     const toggle = useRef<HTMLButtonElement>(null);
     const menu = useRef<HTMLDivElement>(null);
@@ -32,14 +33,20 @@ export default function Header() {
     return (
         <div className="header-shell" onKeyDown={onKeyDown}>
             <header className="header" id="header">
-                <a className="brand" href="#top" aria-label="Новая Ливадия, на главную">
+                <Link className="brand" href={guide ? '/' : '#top'} aria-label="Новая Ливадия, на главную">
                     <img src={asset('/assets/brand/livadia-logo.svg')} alt="" width="356" height="65" />
-                </a>
+                </Link>
                 <nav className="desktop-nav" aria-label="Основная навигация">
-                    {NAV.map((item) => <a key={item.href} href={item.href}>{item.label}</a>)}
+                    {guide && <Link href="/">Главная</Link>}
+                    {NAV.map((item) => guide
+                        ? <Link key={item.href} href={`/${item.href}`}>{item.label}</Link>
+                        : <a key={item.href} href={item.href}>{item.label}</a>)}
+                    <Link href="/guide" className="guide-nav-link" aria-current={guide ? 'location' : undefined}>Гид покупателя</Link>
                 </nav>
                 <a className="header-phone" href={CONTACTS.phoneHref}>{CONTACTS.phone}</a>
-                <button className="header-cta" data-request="Подбор квартиры">Подобрать квартиру</button>
+                {guide
+                    ? <Link className="header-cta" href="/#contact">Подобрать квартиру</Link>
+                    : <button className="header-cta" data-request="Подбор квартиры">Подобрать квартиру</button>}
                 <button
                     ref={toggle}
                     className="menu-toggle"
@@ -54,15 +61,17 @@ export default function Header() {
             <div className="scroll-line" aria-hidden="true" />
             <div ref={menu} className="mobile-menu" id="mobile-menu" hidden={!open}>
                 <nav aria-label="Мобильная навигация">
-                    {NAV.map((item, index) => (
-                        <a key={item.href} href={item.href} onClick={() => setOpen(false)}>
-                            <span>0{index + 1}</span>{item.label}
-                        </a>
-                    ))}
+                    {guide && <Link href="/" onClick={() => setOpen(false)}>Главная</Link>}
+                    {NAV.map((item, index) => guide
+                        ? <Link key={item.href} href={`/${item.href}`} onClick={() => setOpen(false)}><span>0{index + 1}</span>{item.label}</Link>
+                        : <a key={item.href} href={item.href} onClick={() => setOpen(false)}><span>0{index + 1}</span>{item.label}</a>)}
+                    <Link href="/guide" aria-current={guide ? 'location' : undefined} onClick={() => setOpen(false)}><span>0{NAV.length + 1}</span>Гид покупателя</Link>
                 </nav>
                 <div className="mobile-menu-bottom">
                     <a href={CONTACTS.phoneHref}>{CONTACTS.phone}</a>
-                    <button className="button button-olive" data-request="Запись на просмотр">Записаться на просмотр</button>
+                    {guide
+                        ? <Link className="button button-olive" href="/#contact" onClick={() => setOpen(false)}>Записаться на просмотр</Link>
+                        : <button className="button button-olive" data-request="Запись на просмотр">Записаться на просмотр</button>}
                 </div>
             </div>
         </div>

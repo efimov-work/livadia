@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import ApartmentShowcase from '@/components/ApartmentShowcase';
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
@@ -6,6 +7,7 @@ import Motion from '@/components/Motion';
 import RequestDialog from '@/components/RequestDialog';
 import { asset } from '@/lib/asset';
 import { CONTACTS } from '@/lib/content';
+import { buildJsonLd } from '@/lib/seo';
 
 export default function Page() {
     return (
@@ -32,12 +34,13 @@ export default function Page() {
                             <div className="hero-actions" data-hero>
                                 <button className="button button-olive" data-request="Подбор квартиры">Выбрать квартиру <span aria-hidden="true">↗</span></button>
                                 <a className="hero-more" href="#about">Исследовать проект <span aria-hidden="true">↓</span></a>
+                                <Link className="hero-more" href="/guide">Гид покупателя</Link>
                             </div>
                         </div>
                         <div className="hero-bottom" data-hero>
                             <p>Крым, Ялта<br />вблизи Ливадийского дворца</p>
                             <a className="scroll-cue" href="#about" aria-label="Прокрутить к описанию проекта"><span /></a>
-                            <p>5 жилых корпусов<br />первый этап в январе 2028</p>
+                            <p>5 жилых корпусов<br />ключи по этапам строительства</p>
                         </div>
                     </div>
                 </section>
@@ -48,7 +51,7 @@ export default function Page() {
                         <div data-reveal><strong data-counter="20">20</strong><span>этажей</span></div>
                         <div data-reveal><strong>3–6 <small>м</small></strong><span>высота потолков</span></div>
                         <div data-reveal><strong>4,2 <small>га</small></strong><span>приватной территории</span></div>
-                        <div data-reveal><strong data-counter="2028">2028</strong><span>передача ключей первого этапа<br />в январе</span></div>
+                        <div data-reveal><strong data-counter="2028">2028</strong><span>плановый год передачи ключей<br />по объекту 50468</span></div>
                     </div>
                 </section>
 
@@ -192,6 +195,7 @@ export default function Page() {
             <Footer />
             <RequestDialog />
             <Motion />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(buildJsonLd()).replace(/</g, '\\u003c') }} />
         </div>
     );
 }

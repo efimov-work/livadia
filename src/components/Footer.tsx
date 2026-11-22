@@ -1,7 +1,8 @@
+import Link from 'next/link';
 import { asset } from '@/lib/asset';
 import { CONTACTS, NAV } from '@/lib/content';
 
-export default function Footer() {
+export default function Footer({ guide = false }: { guide?: boolean }) {
     return (
         <footer className="footer">
             <div className="container footer-grid">
@@ -9,7 +10,10 @@ export default function Footer() {
                     <img src={asset('/assets/brand/livadia-logo.svg')} alt="" width="356" height="65" loading="lazy" />
                 </a>
                 <nav aria-label="Разделы сайта">
-                    {NAV.map((item) => <a key={item.href} href={item.href}>{item.label}</a>)}
+                    {NAV.map((item) => guide
+                        ? <Link key={item.href} href={`/${item.href}`}>{item.label}</Link>
+                        : <a key={item.href} href={item.href}>{item.label}</a>)}
+                    <Link href="/guide">Гид покупателя</Link>
                 </nav>
                 <div className="footer-contacts">
                     <a href={CONTACTS.phoneHref}>{CONTACTS.phone}</a>

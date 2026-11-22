@@ -2,7 +2,6 @@ import type { Metadata, Viewport } from 'next';
 import localFont from 'next/font/local';
 import {
     absolute,
-    buildJsonLd,
     DESCRIPTION,
     GOOGLE_VERIFICATION,
     KEYWORDS,
@@ -63,10 +62,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <body>
                 <script dangerouslySetInnerHTML={{ __html: "document.documentElement.classList.add('js')" }} />
                 {children}
-                <script
-                    type="application/ld+json"
-                    dangerouslySetInnerHTML={{ __html: JSON.stringify(buildJsonLd()).replace(/</g, '\\u003c') }}
-                />
             </body>
         </html>
     );
